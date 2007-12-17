@@ -15,7 +15,7 @@ Source:		http://dl.sf.net/noffle/%{name}-%{version}.tar.bz2
 Source1:	noffle.xinetd.bz2
 BuildRequires:	libgdbm3-devel
 Requires:	MailTransportAgent common-licenses
-PreReq:		rpm-helper
+Requires(post,preun):	rpm-helper
 
 %description
 NOFFLE is a news server optimized for low speed dialup connection to the
