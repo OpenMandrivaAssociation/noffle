@@ -13,7 +13,7 @@ License:	GPL
 URL:		http://noffle.sf.net/
 Source:		http://dl.sf.net/noffle/%{name}-%{version}.tar.bz2
 Source1:	noffle.xinetd.bz2
-BuildRequires:	libgdbm3-devel
+BuildRequires:	gdbm-devel
 Requires:	MailTransportAgent common-licenses
 Requires(post,preun):	rpm-helper
 
