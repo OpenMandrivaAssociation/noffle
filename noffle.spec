@@ -1,6 +1,6 @@
 %define name		noffle
 %define version 1.1.5
-%define release %mkrel 4
+%define release %mkrel 5
 %define spooldir	%{_var}/spool/%{name}
 %define cfgfilename	%{_sysconfdir}/%{name}.conf
 
