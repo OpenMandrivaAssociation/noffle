@@ -96,3 +96,80 @@ echo
 %attr(0755,news,news)	%dir %{spooldir}/outgoing
 %attr(0755,news,news)	%dir %{spooldir}/overview
 
+
+
+%changelog
+* Tue May 03 2011 Michael Scherer <misc@mandriva.org> 1.1.5-7mdv2011.0
++ Revision: 664789
+- rebuild
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.1.5-5mdv2010.0
++ Revision: 430180
+- rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tv@mandriva.org> 1.1.5-4mdv2009.0
++ Revision: 254055
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Wed Dec 19 2007 Thierry Vignaud <tv@mandriva.org> 1.1.5-2mdv2008.1
++ Revision: 133085
+- fix gdbm-devel BR
+- fix prereq on rpm-helper
+- kill re-definition of %%buildroot on Pixel's request
+- use %%mkrel
+- import noffle
+
+
+* Fri May 13 2005 Nicolas Lécureuil <neoclust@mandriva.org> 1.1.5-2mdk
+- Rebuild
+
+* Fri Jan 14 2005 Per Ã˜yvind Karlsen <peroyvind@linux-mandrake.com> 1.1.5-1mdk
+- 1.1.5
+
+* Tue Feb 24 2004 Lenny Cartier <lenny@mandrakesoft.com> 1.1.2-2mdk
+- rebuild
+
+* Sat Dec 28 2002 Alexander Skwar <ASkwar@DigitalProjects.com> 1.1.2-1mdk
+- 1.1.2
+
+* Wed Jan 09 2002 Alexander Skwar <ASkwar@Linux-Mandrake.com> 1.1.1-1mdk
+- First Mandrake version
+
+* Wed Oct 31 2001 Jim Hague <jim.hague@acm.org>
+- Up version to 1.1-1, and remove inews from %%files as it is created by %%post.
+  Remove relocation prefix - it wasn't working properly. Also
+  RPM 4 seems to automatically compress man pages, so put man pages in
+  %%files as /usr/man/* so we pick up whatever is there, compressed or not.
+
+* Thu Oct 26 2000 Jim Hague <jim.hague@am.org>
+- Added inews link.
+
+* Sun Jun 18 2000 Jim Hague <jim.hague@am.org>
+- Version 1.0pre6-3 RPM
+- Changed /etc/noffle.conf mode to 0600 in case server password is required
+- Added noffle line to /etc/hosts.deny
+- Make inetd.conf handling match linuxconf - don't keep old files and only
+  add entries if nntp line is not already present, even if commented out,
+  and only remove conf lines on an uninstall
+
+* Fri Jun 16 2000 Jim Hague <jim.hague@am.org>
+- Version 1.0pre6-2 RPM
+- Added /etc/cron.daily/noffle-expire
+
+* Thu Jun 15 2000 Jim Hague <jim.hague@am.org>
+- Version 1.0pre6-1 RPM
+- Modified SPEC from 1.0pre5
+
+* Wed May 17 2000 Soenke J. Peters <peters+rpm@simprovement.com>
+- Version 1.0pre5-1 RPM
+- built SPEC from scratch
+
+* Mon Aug 23 1999 Mario Moder <moderm@gmx.net>
+- Version 1.0pre2-1 Binary only RPM, no SPEC available
+
