@@ -10,7 +10,7 @@ Version: 	%{version}
 Release: 	%{release}
 Group:		System/Servers
 License:	GPL
-URL:		http://noffle.sf.net/
+URL:		https://noffle.sf.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://dl.sf.net/noffle/%{name}-%{version}.tar.bz2
 Source1:	noffle.xinetd.bz2
